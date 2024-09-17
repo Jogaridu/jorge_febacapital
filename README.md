@@ -10,6 +10,8 @@ O Yii 2 Basic Project Template é um aplicativo esqueleto do [Yii 2](https://www
 
 Esta documentação descreve as APIs disponíveis para gerenciamento de clientes e livros com suas repectivas regras de negócio desacoplatada da CONTROLLER. Todas as APIs são protegidas por JWT (JSON Web Token) e requerem um token Bearer para autenticação.
 
+Foi utilizado APIs da [Brasil API](https://brasilapi.com.br/docs) para auto-completar os dados de CEP e LIVRO com base no ISBN caso o usuário não complete com todas as informações.
+
 [![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![build](https://github.com/yiisoft/yii2-app-basic/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-basic/actions?query=workflow%3Abuild)
