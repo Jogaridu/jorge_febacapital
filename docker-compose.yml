@@ -1,0 +1,32 @@
+version: '2'
+services:
+    php:
+        image: yiisoftware/yii2-php:7.4-apache
+        restart: always
+        volumes:
+            - ~/.composer-docker/cache:/root/.composer/cache:delegated
+            - ./:/app:delegated
+        ports:
+            - '8282:80'
+        networks:
+            - setup-network
+    mysql:
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_DATABASE: db_febacapital
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+            - '3306:3306'
+        volumes:
+            - mysql-volume:/var/lib/mysql
+        networks:
+            - setup-network
+
+volumes:
+    mysql-volume:
+        driver: local
+
+networks:
+    setup-network:
+        driver: bridge
