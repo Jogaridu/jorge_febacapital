@@ -9,9 +9,9 @@ use yii\data\ActiveDataProvider;
 use yii\web\UploadedFile;
 
 /**
- * ClienteController implements the CRUD actions for cliente model.
+ * ClientController implements the CRUD actions for cliente model.
  */
-class ClienteController extends BaseController {
+class ClientController extends BaseController {
 
     public $modelClass = 'app\models\Cliente';
 

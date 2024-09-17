@@ -63,7 +63,7 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'cliente'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'client'],
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'book'],
             ],
         ],
